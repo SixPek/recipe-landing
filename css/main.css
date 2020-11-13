@@ -2,18 +2,19 @@
   width: 1140px;
   margin-left: auto;
   margin-right: auto;
+  color: #0C2340;
 }
 
-footer .footer {
+header .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-footer .footer .left-container .logo img {
+header .header .left-container .logo img {
   width: 41px;
   height: 41px;
 }
-footer .footer .right-container .link-container a {
+header .header .right-container .link-container a {
   text-decoration: none;
   font-size: 16px;
   line-height: 19px;
@@ -69,6 +70,47 @@ main .banner .banner-text .social-platform a {
 main .banner .banner-text .social-platform a img {
   width: 26px;
   height: 26px;
+}
+main .recipe .recipe-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .recipe .recipe-content .left-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-right: 192px;
+}
+main .recipe .recipe-content .left-container h3 {
+  font-size: 32px;
+  margin: 0;
+  color: #0C2340;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+main .recipe .recipe-content .left-container p {
+  font-size: 16px;
+  color: #0C2340;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 15px;
+}
+main .recipe .recipe-content .left-container .btn-container a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0C2340;
+  padding: 15px 45px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+main .recipe .recipe-content .right-container {
+  width: 40%;
+}
+main .recipe .recipe-content .right-container img {
+  width: 528px;
+  height: 359px;
 }
 
 /*# sourceMappingURL=main.css.map */
