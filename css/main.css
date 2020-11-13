@@ -188,4 +188,44 @@ main .sign-up .sign-up-content .btn-container a {
   font-size: 16px;
 }
 
+footer .footer-content {
+  background-color: #0C2340;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-content .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .footer-content .links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 30px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid gainsboro;
+  font-size: 15px;
+  margin: 0;
+}
+footer .footer-content .social-media {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+footer .footer-content .social-media a {
+  margin: 0 20px;
+}
+footer .footer-content .social-media a img {
+  width: 20px;
+  height: 20px;
+}
+footer .footer-content .design p {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 0 0 30px;
+  margin: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
