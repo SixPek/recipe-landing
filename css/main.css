@@ -71,6 +71,9 @@ main .banner .banner-text .social-platform a img {
   width: 26px;
   height: 26px;
 }
+main .recipe {
+  padding-bottom: 100px;
+}
 main .recipe .recipe-content {
   display: flex;
   flex-direction: row;
@@ -79,8 +82,8 @@ main .recipe .recipe-content {
 main .recipe .recipe-content .left-container {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  padding-right: 192px;
+  width: 55%;
+  margin-right: 192px;
 }
 main .recipe .recipe-content .left-container h3 {
   font-size: 32px;
@@ -106,11 +109,83 @@ main .recipe .recipe-content .left-container .btn-container a {
   font-size: 16px;
 }
 main .recipe .recipe-content .right-container {
-  width: 40%;
+  width: 45%;
 }
 main .recipe .recipe-content .right-container img {
-  width: 528px;
-  height: 359px;
+  width: 100%;
+}
+main .more-recipes .recipe-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+main .more-recipes .recipe-content .left-container {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  margin-left: 192px;
+}
+main .more-recipes .recipe-content .left-container h3 {
+  font-size: 32px;
+  margin: 0;
+  color: #0C2340;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+main .more-recipes .recipe-content .left-container p {
+  font-size: 16px;
+  color: #0C2340;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 15px;
+}
+main .more-recipes .recipe-content .left-container .btn-container a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0C2340;
+  padding: 15px 45px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+main .more-recipes .recipe-content .right-container {
+  width: 45%;
+}
+main .more-recipes .recipe-content .right-container img {
+  width: 100%;
+}
+main .sign-up {
+  display: flex;
+  flex-direction: column;
+  background-color: #DBEBFF;
+  margin: 0;
+}
+main .sign-up .sign-up-content {
+  padding: 50px 0;
+}
+main .sign-up .sign-up-content h3 {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #0C2340;
+}
+main .sign-up .sign-up-content p {
+  padding-bottom: 20px;
+  font-size: 16px;
+  width: 65%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0C2340;
+}
+main .sign-up .sign-up-content .btn-container a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0C2340;
+  padding: 15px 45px;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */
