@@ -4,6 +4,10 @@
     margin-right: auto;
     color: $primary-btn-color;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 
 header {
     .header {
@@ -96,7 +100,7 @@ main {
             .left-container {
                 display: flex;
                 flex-direction: column;
-                width: 55%;
+               
                 margin-right: 192px;
                 h3 {
                     font-size: 32px;
@@ -125,9 +129,10 @@ main {
                 }
             }
             .right-container {
-                width: 45%;
+                
                 img {
-                    width: 100%;
+                    width:527px;
+                height: 358px;
                 }
             }
         }
@@ -141,8 +146,7 @@ main {
             .left-container {
                 display: flex;
                 flex-direction: column;
-                width: 55%;
-                margin-left: 192px;
+                margin-left: 86px;
 
                 h3 {
                     font-size: 32px;
@@ -171,9 +175,10 @@ main {
                 }
             }
             .right-container {
-                width: 45%;
+                
                 img {
-                    width: 100%;
+                    width:527px;
+                    height: 358px;
                 }
             }
         }
@@ -220,9 +225,9 @@ main {
             width: 100%;
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             .recipe{
          
-                width:calc(100%/3);
                 .img-container{
                     position: relative;
                     z-index: 0;
@@ -233,13 +238,28 @@ main {
                 }
                 .text-recipe{
                     position: relative;
+                    background-color: white;
                     z-index: 1;
                     bottom: 30px;
                     left: 15px;
                     margin: 0;
                     width: 324px;
                     box-shadow: 1px 4px 8px gainsboro;
-                    padding: 10px;
+                    padding: 10px 10px 20px;
+                    h3{
+                       font: normal normal bold 32px/39px Helvetica Neue;
+                       color: $primary-color;
+                    }
+                    p{
+                        font: normal normal normal 16px/18px Helvetica Neue;
+                        color: $primary-color;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: $primary-color;
+                        border-bottom: 2px solid $primary-color;
+                    }
                     
                 }
 

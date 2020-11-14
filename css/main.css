@@ -5,6 +5,11 @@
   color: #0C2340;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header .header {
   display: flex;
   align-items: center;
@@ -82,7 +87,6 @@ main .recipe .recipe-content {
 main .recipe .recipe-content .left-container {
   display: flex;
   flex-direction: column;
-  width: 55%;
   margin-right: 192px;
 }
 main .recipe .recipe-content .left-container h3 {
@@ -108,11 +112,9 @@ main .recipe .recipe-content .left-container .btn-container a {
   border-radius: 4px;
   font-size: 16px;
 }
-main .recipe .recipe-content .right-container {
-  width: 45%;
-}
 main .recipe .recipe-content .right-container img {
-  width: 100%;
+  width: 527px;
+  height: 358px;
 }
 main .more-recipes .recipe-content {
   display: flex;
@@ -122,8 +124,7 @@ main .more-recipes .recipe-content {
 main .more-recipes .recipe-content .left-container {
   display: flex;
   flex-direction: column;
-  width: 55%;
-  margin-left: 192px;
+  margin-left: 86px;
 }
 main .more-recipes .recipe-content .left-container h3 {
   font-size: 32px;
@@ -148,11 +149,9 @@ main .more-recipes .recipe-content .left-container .btn-container a {
   border-radius: 4px;
   font-size: 16px;
 }
-main .more-recipes .recipe-content .right-container {
-  width: 45%;
-}
 main .more-recipes .recipe-content .right-container img {
-  width: 100%;
+  width: 527px;
+  height: 358px;
 }
 main .sign-up {
   display: flex;
@@ -194,9 +193,7 @@ main .explor-our-recipe .recipe-container {
   width: 100%;
   display: flex;
   flex-direction: row;
-}
-main .explor-our-recipe .recipe-container .recipe {
-  width: calc(100%/3);
+  justify-content: space-between;
 }
 main .explor-our-recipe .recipe-container .recipe .img-container {
   position: relative;
@@ -207,13 +204,28 @@ main .explor-our-recipe .recipe-container .recipe .img-container img {
 }
 main .explor-our-recipe .recipe-container .recipe .text-recipe {
   position: relative;
+  background-color: white;
   z-index: 1;
   bottom: 30px;
   left: 15px;
   margin: 0;
   width: 324px;
   box-shadow: 1px 4px 8px gainsboro;
-  padding: 10px;
+  padding: 10px 10px 20px;
+}
+main .explor-our-recipe .recipe-container .recipe .text-recipe h3 {
+  font: normal normal bold 32px/39px Helvetica Neue;
+  color: #0C2340;
+}
+main .explor-our-recipe .recipe-container .recipe .text-recipe p {
+  font: normal normal normal 16px/18px Helvetica Neue;
+  color: #0C2340;
+}
+main .explor-our-recipe .recipe-container .recipe .text-recipe a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0C2340;
+  border-bottom: 2px solid #0C2340;
 }
 
 footer .footer-content {
