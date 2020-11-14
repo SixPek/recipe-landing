@@ -1,27 +1,26 @@
-.width-container{
+.width-container {
     width: 1140px;
     margin-left: auto;
     margin-right: auto;
     color: $primary-btn-color;
 }
 
-header{
-    .header{
-
+header {
+    .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .left-container{
-            .logo{
-                img{
+        .left-container {
+            .logo {
+                img {
                     width: 41px;
                     height: 41px;
                 }
             }
         }
-        .right-container{
-            .link-container{
-                a{
+        .right-container {
+            .link-container {
+                a {
                     text-decoration: none;
                     font-size: 16px;
                     line-height: 19px;
@@ -34,143 +33,176 @@ header{
         }
     }
 }
-main{
-    .banner{
-      display: block;
-      position: relative;
-      z-index: -1;
-      margin-top: -80px;     
-            img{
-    
-                width: 100%;
-                height: 666px;
-            }
-            .banner-text{
-                display: block;
-                position: relative;
-                top: -185px;
-                left: 151px;
-                margin: 0;
-                background-color: #0C2340;
-                width:730px;
-                padding: 39px 58px 0 48px;
-                
-               .text{
-               
-                h3{
+main {
+    .banner {
+        display: block;
+        position: relative;
+        z-index: -1;
+        margin-top: -80px;
+        img {
+            width: 100%;
+            height: 666px;
+        }
+        .banner-text {
+            display: block;
+            position: relative;
+            top: -185px;
+            left: 151px;
+            margin: 0;
+            background-color: #0c2340;
+            width: 730px;
+            padding: 39px 58px 0 48px;
+
+            .text {
+                h3 {
                     margin: 0;
                     font-size: 54px;
                     font-family: Arial, Helvetica, sans-serif;
-                    
+
                     line-height: 67px;
-                    color:#fff;
+                    color: #fff;
                 }
-                p{
+                p {
                     font-size: 24px;
                     line-height: 29px;
-                    font: normal normal normal 24px/29px Helvetica ;
-                    padding:10px 226px 10px 0  ;
+                    font: normal normal normal 24px/29px Helvetica;
+                    padding: 10px 226px 10px 0;
                     color: whitesmoke;
-
                 }
-                }
-                .social-platform{
+            }
+            .social-platform {
+                display: flex;
+                justify-content: flex-end;
+                padding: 15px 0;
+                a {
                     display: flex;
-                    justify-content: flex-end;
-                    padding: 15px 0;
-                    a{
-                      display: flex;
-                      padding:0 20px;
+                    padding: 0 20px;
 
-                       img{
-                         
+                    img {
                         width: 26px;
                         height: 26px;
-                       }
                     }
-
                 }
-             
-                
             }
-        
+        }
     }
-    .recipe{
+    .recipe {
         padding-bottom: 100px;
-        .recipe-content{
+        .recipe-content {
             display: flex;
             flex-direction: row;
             align-items: center;
 
-            .left-container{
+            .left-container {
                 display: flex;
                 flex-direction: column;
                 width: 55%;
                 margin-right: 192px;
-               h3{
-                font-size: 32px;
-                margin: 0;
-                color: $primary-color;
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: bolder;
-                padding-bottom:10px;
-               } 
-               p{
-                   font-size: 16px;
-                   color: $primary-color;
-                font-family: Arial, Helvetica, sans-serif;
-                padding-bottom: 15px;
-               }
-               .btn-container{
-                a{
-                    text-decoration: none;
-                    color: #fff;
+                h3 {
+                    font-size: 32px;
+                    margin: 0;
+                    color: $primary-color;
                     font-family: Arial, Helvetica, sans-serif;
-                    background-color: $primary-color;
-                    padding: 15px 45px;
-                    border-radius: 4px;
-                    font-size: 16px;
+                    font-weight: bolder;
+                    padding-bottom: 10px;
                 }
-           
-               }
-            
+                p {
+                    font-size: 16px;
+                    color: $primary-color;
+                    font-family: Arial, Helvetica, sans-serif;
+                    padding-bottom: 15px;
+                }
+                .btn-container {
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        background-color: $primary-color;
+                        padding: 15px 45px;
+                        border-radius: 4px;
+                        font-size: 16px;
+                    }
+                }
             }
-            .right-container{
+            .right-container {
                 width: 45%;
-                img{
-                  width: 100%;
+                img {
+                    width: 100%;
                 }
             }
         }
     }
-    .more-recipes{
-        .recipe-content{
+    .more-recipes {
+        .recipe-content {
             display: flex;
             align-items: center;
             flex-direction: row-reverse;
 
-            .left-container{
+            .left-container {
                 display: flex;
                 flex-direction: column;
                 width: 55%;
                 margin-left: 192px;
-                
-               h3{
-                font-size: 32px;
+
+                h3 {
+                    font-size: 32px;
+                    margin: 0;
+                    color: $primary-color;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bolder;
+                    padding-bottom: 10px;
+                }
+                p {
+                    font-size: 16px;
+                    color: $primary-color;
+                    font-family: Arial, Helvetica, sans-serif;
+                    padding-bottom: 15px;
+                }
+                .btn-container {
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        background-color: $primary-color;
+                        padding: 15px 45px;
+                        border-radius: 4px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .right-container {
+                width: 45%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .sign-up {
+        display: flex;
+        flex-direction: column;
+        background-color: #dbebff;
+        margin: 0;
+        .sign-up-content {
+            padding: 50px 0;
+
+            h3 {
                 margin: 0;
+                padding-bottom: 20px;
+                font-size: 36px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
                 color: $primary-color;
+            }
+            p {
+                padding-bottom: 20px;
+                font-size: 16px;
+                width: 65%;
                 font-family: Arial, Helvetica, sans-serif;
-                font-weight: bolder;
-                padding-bottom:10px;
-               } 
-               p{
-                   font-size: 16px;
-                   color: $primary-color;
-                font-family: Arial, Helvetica, sans-serif;
-                padding-bottom: 15px;
-               }
-               .btn-container{
-                a{
+                color: $primary-color;
+            }
+            .btn-container {
+                a {
                     text-decoration: none;
                     color: #fff;
                     font-family: Arial, Helvetica, sans-serif;
@@ -179,67 +211,53 @@ main{
                     border-radius: 4px;
                     font-size: 16px;
                 }
-           
-               }
-            }
-            .right-container{
-            width: 45%;
-            img{
-                width: 100%;
-            }
-
             }
         }
     }
-    .sign-up{
-        display: flex;
-        flex-direction: column;
-        background-color: #DBEBFF;
-        margin: 0;
-        .sign-up-content{
-        padding: 50px 0;
+    .explor-our-recipe{
+        margin-top: 30px;
+        .recipe-container{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .recipe{
+         
+                width:calc(100%/3);
+                .img-container{
+                    position: relative;
+                    z-index: 0;
 
-           h3{
-               margin: 0;
-               padding-bottom: 20px;
-               font-size: 36px;
-               font-family: Arial, Helvetica, sans-serif;
-               font-weight: bold;
-               color: $primary-color;
-           }
-           p{   
-               padding-bottom: 20px;
-               font-size: 16px;
-               width: 65%;
-               font-family: Arial, Helvetica, sans-serif;
-               color: $primary-color;
-           }
-           .btn-container{
-               a{
-                text-decoration: none;
-                color: #fff;
-                font-family: Arial, Helvetica, sans-serif;
-                background-color: $primary-color;
-                padding: 15px 45px;
-                border-radius: 4px;
-                font-size: 16px;
-               }
-           }
+                    img{
+                        width: 324px;
+                    }
+                }
+                .text-recipe{
+                    position: relative;
+                    z-index: 1;
+                    bottom: 30px;
+                    left: 15px;
+                    margin: 0;
+                    width: 324px;
+                    box-shadow: 1px 4px 8px gainsboro;
+                    padding: 10px;
+                    
+                }
+
+            }
         }
     }
 }
-footer{
-    .footer-content{
+footer {
+    .footer-content {
         background-color: $primary-color;
         display: flex;
         flex-direction: column;
-        .links{
+        .links {
             display: flex;
             flex-direction: row;
             justify-content: center;
 
-            a{
-                    
+            a {
                 color: #fff;
                 text-decoration: none;
                 padding: 20px 30px 10px;
@@ -247,29 +265,28 @@ footer{
                 border-bottom: 1px solid gainsboro;
                 font-size: 15px;
                 margin: 0;
-
             }
         }
-        .social-media{
+        .social-media {
             display: flex;
             justify-content: center;
             padding: 40px 0;
-            a{
+            a {
                 margin: 0 20px;
-                img{
+                img {
                     width: 20px;
                     height: 20px;
                 }
             }
         }
-        .design{
-            p{
-               color: #fff; 
-               font-family: Arial, Helvetica, sans-serif;
-               font-size: 15px;
-               text-align: center;
-               padding: 0 0 30px;
-               margin: 0;
+        .design {
+            p {
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-align: center;
+                padding: 0 0 30px;
+                margin: 0;
             }
         }
     }

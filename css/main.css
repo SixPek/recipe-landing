@@ -40,7 +40,7 @@ main .banner .banner-text {
   top: -185px;
   left: 151px;
   margin: 0;
-  background-color: #0C2340;
+  background-color: #0c2340;
   width: 730px;
   padding: 39px 58px 0 48px;
 }
@@ -157,7 +157,7 @@ main .more-recipes .recipe-content .right-container img {
 main .sign-up {
   display: flex;
   flex-direction: column;
-  background-color: #DBEBFF;
+  background-color: #dbebff;
   margin: 0;
 }
 main .sign-up .sign-up-content {
@@ -186,6 +186,34 @@ main .sign-up .sign-up-content .btn-container a {
   padding: 15px 45px;
   border-radius: 4px;
   font-size: 16px;
+}
+main .explor-our-recipe {
+  margin-top: 30px;
+}
+main .explor-our-recipe .recipe-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+main .explor-our-recipe .recipe-container .recipe {
+  width: calc(100%/3);
+}
+main .explor-our-recipe .recipe-container .recipe .img-container {
+  position: relative;
+  z-index: 0;
+}
+main .explor-our-recipe .recipe-container .recipe .img-container img {
+  width: 324px;
+}
+main .explor-our-recipe .recipe-container .recipe .text-recipe {
+  position: relative;
+  z-index: 1;
+  bottom: 30px;
+  left: 15px;
+  margin: 0;
+  width: 324px;
+  box-shadow: 1px 4px 8px gainsboro;
+  padding: 10px;
 }
 
 footer .footer-content {
