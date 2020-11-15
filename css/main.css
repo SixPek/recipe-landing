@@ -8,16 +8,54 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
+header {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  header {
+    width: 100%;
+  }
+}
 header .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 767px) {
+  header .header {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .header .left-container {
+    flex-wrap: wrap;
+  }
+}
 header .header .left-container .logo img {
   width: 41px;
   height: 41px;
+}
+@media screen and (max-width: 767px) {
+  header .header .left-container .logo img {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .header .right-container {
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .header .right-container .link-container {
+    display: none;
+  }
 }
 header .header .right-container .link-container a {
   text-decoration: none;
@@ -28,6 +66,19 @@ header .header .right-container .link-container a {
   font: normal normal bold Helvetica;
   color: #0C2340;
 }
+header .header .right-container .ham-bar {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  header .header .right-container .ham-bar {
+    display: flex;
+    justify-content: right;
+  }
+}
+header .header .right-container .ham-bar a img {
+  width: 24px;
+  height: 24px;
+}
 
 main .banner {
   display: block;
@@ -35,9 +86,20 @@ main .banner {
   z-index: -1;
   margin-top: -80px;
 }
+@media screen and (max-width: 767px) {
+  main .banner {
+    width: 100%;
+  }
+}
 main .banner img {
   width: 100%;
   height: 666px;
+}
+@media screen and (max-width: 767px) {
+  main .banner img {
+    width: 100%;
+    height: 300px;
+  }
 }
 main .banner .banner-text {
   display: block;
@@ -49,12 +111,26 @@ main .banner .banner-text {
   width: 730px;
   padding: 39px 58px 0 48px;
 }
+@media screen and (max-width: 767px) {
+  main .banner .banner-text {
+    margin-right: 0;
+    width: 248px;
+    padding: 15px;
+    top: -85px;
+    left: -10px;
+  }
+}
 main .banner .banner-text .text h3 {
   margin: 0;
   font-size: 54px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 67px;
   color: #fff;
+}
+@media screen and (max-width: 767px) {
+  main .banner .banner-text .text h3 {
+    font: normal normal bold 28px/34px Helvetica Neue;
+  }
 }
 main .banner .banner-text .text p {
   font-size: 24px;
@@ -63,21 +139,43 @@ main .banner .banner-text .text p {
   padding: 10px 226px 10px 0;
   color: whitesmoke;
 }
+@media screen and (max-width: 767px) {
+  main .banner .banner-text .text p {
+    font: normal normal normal 12px/14px Helvetica Neue;
+    padding: 0;
+  }
+}
 main .banner .banner-text .social-platform {
   display: flex;
   justify-content: flex-end;
   padding: 15px 0;
 }
+@media screen and (max-width: 767px) {
+  main .banner .banner-text .social-platform {
+    padding: 0 15px;
+  }
+}
 main .banner .banner-text .social-platform a {
   display: flex;
   padding: 0 20px;
+}
+@media screen and (max-width: 767px) {
+  main .banner .banner-text .social-platform a {
+    padding: 0 10px;
+  }
 }
 main .banner .banner-text .social-platform a img {
   width: 26px;
   height: 26px;
 }
+@media screen and (max-width: 767px) {
+  main .banner .banner-text .social-platform a img {
+    width: 16px;
+    height: 16px;
+  }
+}
 main .recipe {
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 main .recipe .recipe-content {
   display: flex;
@@ -188,6 +286,14 @@ main .sign-up .sign-up-content .btn-container a {
 }
 main .explor-our-recipe {
   margin-top: 30px;
+  padding-bottom: 80px;
+}
+main .explor-our-recipe h2 {
+  font: normal normal bold 46px/56px Helvetica Neue;
+  color: #0C2340;
+  margin: 0;
+  padding: 20px 0;
+  font-weight: bold;
 }
 main .explor-our-recipe .recipe-container {
   width: 100%;
@@ -226,6 +332,18 @@ main .explor-our-recipe .recipe-container .recipe .text-recipe a {
   font-weight: bold;
   color: #0C2340;
   border-bottom: 2px solid #0C2340;
+}
+main .explor-our-recipe .btn-container {
+  display: flex;
+  justify-content: center;
+}
+main .explor-our-recipe .btn-container a {
+  text-decoration: none;
+  background-color: #0C2340;
+  color: white;
+  padding: 20px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 footer .footer-content {
