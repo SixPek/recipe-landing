@@ -1,9 +1,13 @@
+*{
+    box-sizing: border-box;
+}
 .width-container {
     width: 1140px;
     margin-left: auto;
     margin-right: auto;
     color: $primary-btn-color;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -107,10 +111,10 @@ main {
             padding: 39px 58px 0 48px;
             @include media-xs{
                 margin-right: 0;
-                width: 248px;
+                width: 310px;
                 padding: 15px;
                 top: -85px;
-                left: -10px;
+                left: 25px;
             }
 
             .text {
@@ -141,6 +145,7 @@ main {
                 justify-content: flex-end;
                 padding: 15px 0;
                 @include media-xs{
+                    width: 100%;
                     padding: 0 15px;
                 }
                 a {
@@ -148,6 +153,8 @@ main {
                     padding: 0 20px;
                     @include media-xs{
                         padding: 0 10px;
+                        width: 16px;
+                        height: 16px;
                     }
 
                     img {
@@ -168,12 +175,20 @@ main {
             display: flex;
             flex-direction: row;
             align-items: center;
+            @include media-xs{
+                flex-direction: column-reverse;
+                width: 100%;
+            }
 
             .left-container {
                 display: flex;
                 flex-direction: column;
-               
                 margin-right: 192px;
+                @include media-xs{
+                    width: 100%;
+                    margin: 20px 0;
+                    padding: 0 50px 0 25px;
+                }
                 h3 {
                     font-size: 32px;
                     margin: 0;
@@ -181,12 +196,19 @@ main {
                     font-family: Arial, Helvetica, sans-serif;
                     font-weight: bolder;
                     padding-bottom: 10px;
+                    @include media-xs{
+                        font: normal normal bold 24px/29px Helvetica Neue;
+                    }
                 }
                 p {
                     font-size: 16px;
                     color: $primary-color;
                     font-family: Arial, Helvetica, sans-serif;
                     padding-bottom: 15px;
+                    @include media-xs{
+                        font: bold normal normal 12px/14px Helvetica Neue;
+                        padding-bottom: 20px;
+                    }
                 }
                 .btn-container {
                     a {
@@ -197,14 +219,24 @@ main {
                         padding: 15px 45px;
                         border-radius: 4px;
                         font-size: 16px;
+                        @include media-xs{
+                            font: normal normal bold 12px/15px Helvetica Neue;
+                        }
                     }
                 }
             }
             .right-container {
+                @include media-xs{
+                    width: 100%;
+                }
                 
                 img {
                     width:527px;
                 height: 358px;
+                @include media-xs{
+                    width: 100%;
+                    height: 254px;
+                }
                 }
             }
         }
@@ -214,11 +246,20 @@ main {
             display: flex;
             align-items: center;
             flex-direction: row-reverse;
+            @include media-xs{
+                width: 100%;
+                flex-direction: column-reverse;
+            }
 
             .left-container {
                 display: flex;
                 flex-direction: column;
                 margin-left: 86px;
+                @include media-xs{
+                    width: 100%;
+                    margin:0;
+                    padding:20px 57px 0 25px ;
+                }
 
                 h3 {
                     font-size: 32px;
@@ -227,12 +268,20 @@ main {
                     font-family: Arial, Helvetica, sans-serif;
                     font-weight: bolder;
                     padding-bottom: 10px;
+                    @include media-xs{
+                        width: 100%;
+                        font: normal normal bold 24px/29px Helvetica Neue;
+                    }
                 }
                 p {
                     font-size: 16px;
                     color: $primary-color;
                     font-family: Arial, Helvetica, sans-serif;
                     padding-bottom: 15px;
+                    @include media-xs{
+                        width: 100%;
+                        font: normal normal normal 12px/14px Helvetica Neue;
+                    }
                 }
                 .btn-container {
                     a {
@@ -243,14 +292,23 @@ main {
                         padding: 15px 45px;
                         border-radius: 4px;
                         font-size: 16px;
+                        @include media-xs{
+                            width: 100%;
+                            font: normal normal bold 12px/15px Helvetica Neue;
+                        }
                     }
                 }
             }
             .right-container {
-                
+                @include media-xs{
+                    width: 100%;
+                }
                 img {
                     width:527px;
                     height: 358px;
+                    @include media-xs{
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -260,8 +318,16 @@ main {
         flex-direction: column;
         background-color: #dbebff;
         margin: 0;
+        @include media-xs{
+            width: 100%;
+            margin-top: 80px;
+        }
         .sign-up-content {
             padding: 50px 0;
+            @include media-xs{
+                width: 100%;
+                padding:40px 55px 40px 25px;
+            }
 
             h3 {
                 margin: 0;
@@ -270,6 +336,11 @@ main {
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: bold;
                 color: $primary-color;
+                @include media-xs{
+                    width: 100%;
+                    font: normal normal bold 26px/29px Helvetica Neue;
+
+                }
             }
             p {
                 padding-bottom: 20px;
@@ -277,6 +348,10 @@ main {
                 width: 65%;
                 font-family: Arial, Helvetica, sans-serif;
                 color: $primary-color;
+                @include media-xs{
+                    width: 100%;
+                    font: normal normal normal 14px/16px Helvetica Neue;
+                }
             }
             .btn-container {
                 a {
@@ -287,6 +362,9 @@ main {
                     padding: 15px 45px;
                     border-radius: 4px;
                     font-size: 16px;
+                    @include media-xs{
+                        font: normal normal bold 12px/15px Helvetica Neue;
+                    }
                 }
             }
         }
